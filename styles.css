@@ -1,0 +1,324 @@
+@font-face {
+    font-family:"JosefinSansVariableItalic";
+    src: url(/JosefinSans-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family:"JosefinSansVariableweight";
+    src: url(/JosefinSans-VariableFont_wght.ttf);
+}
+
+* {
+    font-size: 11px; text-align: center;
+    color: hsl(228, 45%, 44%); 
+}
+
+html,body{
+    margin:0;
+    padding:0;
+ 
+}
+
+/* Mobile Styles 375px */
+
+.card__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 375px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+.card__logo__mobile {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 2rem;
+    align-self:flex-start;
+    width:100px;
+    height: 21px;
+
+}
+
+.card__logo__desktop{
+    display: none;
+}
+.desktop__logo{
+    display: none;
+}
+.hero__image {
+    margin-bottom: 5rem;
+}
+
+.hero__image__desktop{
+    display: none;
+}
+
+
+.content__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:"JosefinSansVariableweight";
+    text-align: center;
+}
+
+span{
+    font-family:"JosefinSansVariableweight";
+    color:#CE9898;
+    line-height: 42px;
+    font-size: 40px;
+    line-height:  10.83px;
+    letter-spacing:10.83px ;
+    font-weight:300;
+    text-transform: uppercase;
+
+}
+
+.content__title {
+    color: #423A3A;
+    line-height: 42px;
+    font-size: 40px;
+    font-weight:600;
+    letter-spacing:10.83px ;
+    text-transform: uppercase;
+    margin-bottom:2rem;
+}
+
+.content__information {
+    color: #CE9898;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight:400;
+    letter-spacing:0px;
+    margin-bottom:3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.content__email__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 311px;
+    height: 48px;
+    border-radius: 24px;
+    border: 2px solid #CE9898;
+    overflow: hidden;
+    opacity: 0.7;
+    margin-bottom:1rem;
+}
+
+.email__address {
+    width: 311px;
+    border: none;
+    border-radius: 28px;
+
+}
+
+.email__address::placeholder {
+    font-family:"JosefinSansVariableweight";
+    color: #CE9898;
+    line-height: 46px;
+    font-size: 14px;
+    font-weight:300;
+    letter-spacing:0px;
+    text-align: start;
+
+    opacity: 0.8;
+} 
+
+.email__submit {
+    background-color: #F8BFBF;
+    height: 48px;
+    width: 64px;
+    border: none;
+    border-radius: 28px;
+    padding-left:2rem;
+    padding-right:2rem;
+    margin-left:2rem;
+
+}
+
+.email__submit:hover{
+    cursor:pointer;
+}
+
+input {
+    font-family:"JosefinSansVariableweight";
+    color: #000000;
+    line-height: 28px;
+    font-size: 14px;
+    font-weight:800;
+    letter-spacing:0px;
+    text-align: start;
+    margin-left:2rem;
+    
+    border:none;
+
+}
+
+
+.invalid__message{
+    opacity: 0;
+    font-family:"JosefinSansVariableweight";
+    color: #F96464;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight:800;
+    letter-spacing:0px;
+    text-align: start;
+   
+}
+
+
+.arrow__icon{
+    
+}
+
+.invalid{
+    display: none;
+    opacity: 1;
+}
+
+
+.invalid__email {
+    display:block;
+    opacity: 1;
+}
+
+.valid {
+    background-color: green;
+    display:block;
+}
+
+.invalid__outline{
+    border: 2px solid red;
+}
+
+.valid__outline{
+    border: 2px solid rgba(21, 255, 0, 0.524);
+}
+
+/* Tablet Styles 768px */
+
+@media (min-width: 90rem){
+*{
+    text-align: start;
+}
+.desktop__logo{
+    display: flex;
+    translate: -150% -350%;
+
+}
+
+.card__container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: none;
+    width:1440px;
+    height:800px;
+    max-width: 100%;
+ 
+}
+
+.hero__image{
+    display: none;
+}
+
+.hero__image__desktop{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 18rem;
+    height:800px;
+    width: 610px;
+}
+
+.content__wrapper{
+    text-align: left;
+    
+
+}
+
+span,
+.content__title{
+    font-size: 64px;
+    line-height: 71px;
+    letter-spacing: 17.32px;
+}
+
+.content__title{
+    align-self: flex-start;
+    letter-spacing: 17.32px;
+    
+}
+
+.content__information{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight:600;
+    margin-left:0;
+    margin-right:16rem;
+    margin-bottom: 2rem;
+}
+
+.content__email__wrapper{
+    height:56px;
+    width:445px;
+    align-self: flex-start;
+    justify-content: flex-end;
+    border-radius: 28px;
+    margin-bottom:1rem;
+}
+
+
+
+
+.email__submit{
+    height:56px;
+    width:100px;
+    padding-left: 4rem;
+    background-color: #CE9898;
+}
+.card__logo__mobile{    
+    display: none;
+}
+
+.card__logo__desktop{
+    display: block;
+}
+
+.desktop__logo{
+
+}
+.desktop__wrapper{
+  
+    margin:0;
+}
+
+.invalid__message{
+    opacity:0;
+    font-family:"JosefinSansVariableweight";
+    color: #F96464;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight:800;
+    letter-spacing:0px;
+    align-self: flex-start;
+    translate: 10%
+
+}
+
+.invalid__email {
+    display: block;
+    opacity: 1;
+}
+
+.input{
+    margin-right:0;
+    padding-left: 0;
+}
+
+}
